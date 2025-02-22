@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        .container1{
+            height: 200px;
+            width: 200px;
+            border: 2px solid red;
+            margin-bottom: 5px;
+        }
+        .container2{
+            height: 200px;
+            width: 200px;
+            border: 2px solid red;
+            margin-bottom: 5px;
+        }
+
+        .dark{
+            background-color: black;
+            color:white
+        }
+    </style>
+</head>
+<body>
+
+    <h1> Events </h1>
+
+    <div class="container1">
+        <h1> hello I am container1</h1>
+    </div>
+
+    <div class="container2">
+
+    </div>
+    
+  <button onclick="hello()"  onclick="hi()">click me</button>
+
+  <button onclick="print()">copy</button>
+
+  <button onclick="dark()">dark</button>
+
+  <button onclick="light()">light</button>
+
+  <button class="btn2" >submit</button>
+
+  <button class="btn3">print my name</button>
+
+    <script src="./script.js"></script>
+</body>
+</html>
