@@ -1,0 +1,50 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container > section {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  text-align: center;
+}
+.container > section > div > h1 {
+  color: white;
+  font-size: 60px;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+.container > section > div > p {
+  color: white;
+  font-size: 40px;
+  font-weight: 300;
+  text-transform: capitalize;
+}
+#section-1 {
+  background-image: url("./assets/sunrise.jpeg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-attachment: fixed;
+}
+#section-2 {
+  background-image: url("./assets/sky.jpeg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-attachment: fixed;
+}
+#section-3 {
+  background-image: url("./assets/forest.jpeg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-attachment: fixed;
+}
+#section-4 {
+  background-image: url("./assets/sea.jpeg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-attachment: fixed;
+}

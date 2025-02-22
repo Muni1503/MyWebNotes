@@ -1,0 +1,32 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+.container{
+    display:flex;
+    border:1px solid black;
+    height:100vh;
+    width:100vw;
+    column-gap:10px;
+    justify-content: center;
+    align-items: center;
+}
+.box{
+    border:1px solid red;
+    height: 100px;  
+    width:300px;
+}
+
+#box-2{
+    /* order:1; */
+    /* flex-grow: 1;//it will work only when the extra width is available */
+     flex-shrink: 2;/*//default value is 1 so use 2 or more */
+      flex-basis: 60%;/*//it will take 60% of the space(width) */
+}
+#box-1{
+    /* order:2; */
+    /* flex-grow: 2; */
+    flex-basis: 40%;
+    
+}

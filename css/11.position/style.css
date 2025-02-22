@@ -1,0 +1,46 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+h1{
+    /* position:fixed; */
+    position:sticky;
+}
+
+body {
+  width: 500px;
+  margin: 0 auto;
+}
+
+p {
+  background: aqua;
+  border: 3px solid blue;
+  padding: 10px;
+  margin: 10px;
+}
+
+span {
+  background: red;
+  border: 1px solid black;
+}
+
+/* .positioned {
+  position: static;
+  background: yellow;
+  
+} */
+
+/* .positioned{
+    position:relative;
+    background: yellow;
+    top:20px;
+    left:50px;
+} */
+
+/* .positioned{
+    position:absolute;
+    background: yellow;
+    top:0px;
+    left:50px;
+} *//*for absolute which parent has position:relative according to it it will arrange else it will arrange according to htm*/

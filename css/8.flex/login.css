@@ -1,0 +1,76 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+.outer{
+    height:100vh;
+    width:100vw;
+    background-color: #dcccff;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.outer > .inner{
+    background-color: white;
+    border-radius: 30px;
+    width:400px;
+    padding-inline:30px;
+    padding-block:40px;
+    box-shadow: 2px 2px 2px #a993da;
+}
+.inner > header >h1{
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+.inner > header >p{
+    font-size: 14px;
+    font-style: italic;
+}
+main{
+    margin-top: 20px;
+}
+.form-group > label{
+    display: block;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+.form-group > input{
+    display: block;
+    padding: 10px;
+    border-radius: 10px;
+    border-color: #cccc;
+    height: 60px;
+    width:100%;
+}
+.form-group{
+    margin-bottom: 10px;
+}
+.form-group > button{
+    margin-top: 20px;
+    display: block;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 20px;
+    height: 60px;
+    width:360px;
+    background-color: blue;
+    color:white;
+    cursor:pointer;
+}
+.form-group > button:hover{
+    background-color: rgb(129, 129, 215);
+}
+.outer > .inner > footer{
+    margin-top: 10px;
+}
+footer >p{
+    display: inline-block;
+}
+footer >a{
+    text-decoration: none;
+    color: blue;
+    margin-left: 10px;
+}

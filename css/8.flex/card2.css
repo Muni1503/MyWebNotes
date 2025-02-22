@@ -1,0 +1,47 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.outer {
+    height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  /* flex-wrap: wrap-reverse; */
+}
+.outer > div {
+    width:300px;
+  text-align: center;
+  border: 1px solid black;
+  padding: 50px;
+  box-shadow: 2px 2px 2px  black;
+}
+.card > header > i{
+  font-size: 50px;
+  margin-bottom: 20px;
+}
+.card > main > h1 {
+  font-size: 38px;
+  margin-bottom: 20px;
+}
+.card > main > p {
+  text-align: center;
+  margin-bottom: 30px;
+}
+.card > main > button {
+  background-color: black;
+  color: white;
+  padding: 10px 45px;
+  border-radius: 20px;
+}
+.insta{
+  background-color: rgb(237, 9, 85);
+  color: white;
+  box-shadow:2px 2px 2px rgb(237, 9, 85);
+}
+.insta > main > button {
+  background-color: white;
+  border: none;
+  color: black;
+} 

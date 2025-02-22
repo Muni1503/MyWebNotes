@@ -1,0 +1,27 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.outer {
+  height: 100vh;
+  background-color: red;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+.outer>.inner{
+    height:200px;
+    width:200px;
+    background-color: green;
+}
+@media(max-width:600px){
+    .outer{
+        background-color: black;
+    }
+}
+@media (min-width:800px){
+    .outer>.inner{
+        background-color: rgb(126, 192, 20);
+    }
+}

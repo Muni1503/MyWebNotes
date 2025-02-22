@@ -1,0 +1,68 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.outer {
+  height: 100vh;
+  width: 100vw;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.outer > .inner {
+  height: 400px;
+  width: 400px;
+  border: 2px solid white;
+}
+.outer > .inner > .box {
+  height: 100px;
+  width: 100px;
+  border: 2px solid white;
+  
+  /* transition: all 1s ease-in; */
+   animation: box-transfer 2s ease-in infinite alternate-reverse; 
+
+
+  /* animation-name:rotate;
+  animation-duration: 1s;
+  animation-timing-function: ease-in;
+  animation-iteration-count: infinite;
+  animation-direction:alternate-reverse; */
+
+
+}
+/* .outer > .inner > .box:hover {
+  transform: translateX(300px);
+} */
+
+
+ @keyframes box-transfer {
+  0% {
+    transform: translate(0, 0);
+  }
+  25%{
+    transform:translate(0,300px);
+  }
+  50%{
+    transform:translate(300px,300px);
+  }
+  75%{
+    transform:translate(300px,0);
+  }
+  100%{
+    tarnsform:translate(0,0)
+  }
+
+  
+} 
+
+@keyframes rotate {
+    from{
+        transform: translate(0,0);
+    }
+    to{
+        transform: translate(300px,300px);
+    }
+}

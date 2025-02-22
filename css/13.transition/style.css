@@ -1,0 +1,41 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.outer {
+  height: 100vh;
+  background-color: #212121;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.outer > .inner {
+  height: 500px;
+  width: 500px;
+  background-image: linear-gradient(to right, blue, white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+}
+.outer > .inner > .box {
+  height: 100px;
+  width: 100px;
+  background-image: linear-gradient(to right, red, yellow);
+  /* transition*/
+  /* transition-property: all;
+  transition-duration: 5s;
+  transition-timing-function: ease; /* linear is default*/
+  /* transition-delay: 1s; */
+
+  /* ease and ease-out both are same but little bit different in 
+  speed(only little bit) */
+  transition: all 5s ease ;
+}
+
+.outer > .inner > .box:hover {
+  height: 200px;
+  width: 200px;
+  border-radius: 30px;
+}

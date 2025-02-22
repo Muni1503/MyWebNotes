@@ -1,0 +1,164 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/*  selectors are used to select the html elements 
+           <!-- 1.simple Selectors -->
+                 <!-- 1(i).Tag Name --> */
+/* p{
+    color:green;
+    font-size: 30px;
+    padding-top: 10px;
+}                  */
+
+/* 2.Grouping(,)    */
+/* p,h1{
+    color:green;
+    font-size: 20px;
+}                   */
+
+/* 3.universal(*)-it will apply for all the elements inccluding body also */
+/* 4.IdName(#) */
+
+/* #p1 {
+  color: green;
+  font-size: 35px;
+} */
+
+
+/* 5.className */
+/* .p2{
+    color:green;
+    font-size: 35px;
+} */
+
+
+                  /* 2.combinator selector-combination of two simple selectors *
+                   /* 1.Desceendent Selector( )-it will select all the children,grandchildren,and so on */ 
+
+/* .inner h2{
+    color:green;
+    /* it will select all the h2 inside content h2 also */
+/* }                    */ 
+
+/* 2.Direct child selector-it will select only the children */
+/* .inner>h2{
+    color:green;
+    it will apply only to the h2 in inner mean it select only selectors
+} */
+
+/* 3.adjacent sibiling selector */
+/* .inner>.content>.p2+p{
+    color:green;
+    font-size: 35px;
+    it will select the adjacent child of para(p)
+} */
+
+/* 4.general sibiling selector */
+/* .inner>.content>.p2~p{
+    color:green;
+    font-size:35px;
+
+} */
+
+
+
+
+/* 3.!pseudo-class-selectors */
+/* 1.hover */
+.content>a{
+    text-decoration: none;
+    color: black;
+}
+/* .content>a:hover{
+    color:green;
+} */
+
+/* 2.link */
+
+/* .content>a:link{
+    color:red;
+} 
+.content>a:active{
+    color:blue;
+}
+.content>a:visited{
+    color:green;
+}
+
+/* .content>:last-child{
+    color:green;
+    font-size:35px ;
+} */
+/* .content>:first-child{
+    color:rgb(184, 184, 16);
+    font-size: 35px;
+} */
+/*.content>:nth-child(2n+1){
+    color:red;
+} */
+
+/* .content>p:last-of-type{
+    color:green;
+    font-size: 35px;
+}
+.content>a:last-of-type{
+    color:red;
+    font-size: 35px;
+} */
+
+
+                 /* 4.pseudo element selectors */
+/* .content>p::before{
+    content:"I am rao ...";
+    color:green;
+    font-size: 35px;
+    /* it will apply these style to the content we provided 
+}              */
+
+/* .content>p::after{
+    content:"I am rao ...";
+    color:green;
+    font-size: 35px;
+    /* it will apply these style to the content we provided 
+}   */
+/* .content>p::first-line{
+    
+    color:green;
+    font-size: 35px;
+    
+}      */
+
+/* .content>p::first-letter{
+    
+    color:green;
+    font-size: 35px;
+    
+}    */
+
+/* .content>::selection{
+    
+    color:green;
+    font-size: 35px;
+    
+}    */
+
+/* ul>li{
+    margin-left: 50px;
+}
+.content>ul>::marker{
+    
+    color:green;
+    font-size: 35px;
+    
+}    */
+
+            /* 5. Attribute selector*/
+.content>a[href]{
+    color:green;
+}   
+
+.content>a[href="index.html"]{
+    color:red;
+}

@@ -1,0 +1,25 @@
+*{
+    box-sizing: border-box;
+}
+.content{
+    height: 30vh;
+    width:20vw;
+    background-color: red;
+    /* padding-left:10px;
+    padding-top: 10px;
+    padding-right: 30px;
+    padding-bottom: 10px; */
+
+    
+    /*padding-inline:10px;/*for left and right*/
+    /*padding-block:10px;/*for top and bottom*/
+
+    padding-top:100px;/* top right bottom left*/
+}
+.content>.box{
+    height:10vh;
+    width:10vw;
+    background-color: blue;
+    border:5px solid rgb(0, 255, 26);
+    /* margin:10px 20px 10px 20px; */
+}
