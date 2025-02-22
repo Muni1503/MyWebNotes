@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./grid.css">
+</head>
+<body>
+    <div class="container">
+        <div class="items item1">Header</div>
+        <div class="items item2">Menu</div>
+        <div class="items item3">Ad2</div>
+        <div class="items item4">Main</div>
+        <div class="items item5">Ad1</div>
+        <div class="items item6">footer</div>
+    </div>
+</body>
+</html>
+
+
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    background-color: #eaeaea;
+    display: grid;
+    /* grid-template-columns: 20% 40% 40%;
+    grid-template-rows: 70px 400px 120px; */
+    /* column-gap: 4px;
+    row-gap: 4px; */
+    /* gap: 4px; */
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 10% 25% 25% 25% 15%;
+    gap: 4px;
+}
+
+.items{
+background-color: coral;
+color: #fff;
+}
+.item1{
+    grid-column-start: 1;
+    grid-column-end: 5;
+    background-color: yellow;
+}
+.item2{
+    grid-row-start: 2;
+    grid-row-end: 4;
+    background-color: blue;
+}
+.item3{
+    grid-row-start: 4;
+    grid-row-end: 5;
+    background-color: aqua;
+}
+.item4{
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 5;
+}
+.item5{
+    grid-row-start: 2;
+    grid-row-end: 5;
+    background-color: darkcyan;
+}
+.item6{
+    grid-column-start: 1;
+    grid-column-end: 5;
+    background-color: steelblue;
+}

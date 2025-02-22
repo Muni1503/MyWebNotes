@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0px;
+            padding: 0px;
+        }
+        #email_error ,
+        #password_error{
+            color: #ff0000;
+            display: none;
+        }
+    
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>User Login</h1>
+        <form action="index.html" method="post" name="form" onsubmit=" return validate()">
+            <div class="font">Email or Phone</div>
+            <input type="text" name="email" id="email" onkeyup="moveContent()">
+            <div id="email_error">Please fill up your Email or Phone</div>
+            <div class="font font2">Password</div>
+            <input type="text" name="password" id="password">
+            <div id="password_error">Please fill up your Password</div>
+            <button type="submit">Login</button>
+        </form>
+    </div>
+
+    <script>
+        // var email = document.forms['form']['email'];
+        var email = document.getElementById("email")
+        // var password = document.forms['form']['password'];
+        var password = document.getElementById("password");
+
+
+        var email_error=document.getElementById("email_error");
+        var password_error=document.getElementById("password_error");
+email.addEventListener('textInput',email_Verify);
+password.addEventListener('textInput',pass_Verify);
+
+function validate(){
+   
+if(email.value.length < 9){
+    email.style.border = "1px solid red";
+    email_error.style.display="block"
+    email.focus();
+    return false;
+}
+if(password.value.length < 6){
+    password.style.border = "1px solid red";
+    password_error.style.display="block"
+    password.focus();
+    return false;
+}
+}
+
+function email_Verify(){
+    if(email.value.length >= 8){
+    email.style.border = "1px solid #ccc";
+    email_error.style.display="none"
+    return true;
+}
+}
+function pass_Verify(){
+    if(password.value.length >= 9){
+        password.style.border = "1px solid #ccc";
+    password_error.style.display="none"
+    return true;
+}
+}
+
+
+    </script>
+</body>
+</html>
